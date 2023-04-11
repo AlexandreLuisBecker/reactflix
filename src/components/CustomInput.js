@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, TextInput} from "react-native";
 
-export default function CustomField({
+export default function CustomInput({
     label,
     icon,
     inputType,
