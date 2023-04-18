@@ -1,15 +1,13 @@
 import React from "react";
-import { SafeAreaView,Text } from "react-native";
-
-import LoginScreen from './src/screens/login/LoginScreen'
-import RegisterScreen from './src/screens/register/RegisterScreen'
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import { NavigationContainer } from "@react-navigation/native";
+import AuthStack from "./src/navigation/AuthStack";
 
 export default function App() {
   return(
-    <SafeAreaView>
-    <RegisterScreen/>
 
-
-    </SafeAreaView>
+<NavigationContainer>
+  <AuthStack/>
+</NavigationContainer>
   )
 }
