@@ -13,7 +13,7 @@ export default function CustomInput({
         <View
         style={{
             flexDirection: 'row',
-            borderBottomColor: '#fff',
+            borderBottomColor: '#FFF',
             borderBottomWidth: 1,
             paddingBottom: 8,
             marginBottom: 25
