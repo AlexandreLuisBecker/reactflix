@@ -24,7 +24,7 @@ const TwitterImage = '../../../assets/images/twitter.png'
 
 const RegisterScreenImageSrc = '../../../assets/registration.png'
 
-const RegisterScreen = () => {
+const RegisterScreen = ({navigation}) => {
     const [date, setDate] = useState (new Date())
     const [open, setOpen] = useState(false)
     const [birthLabel, setBirthLabel] = useState('Data de Nascimento')
@@ -237,7 +237,7 @@ const RegisterScreen = () => {
                     }
                 />
 
-                <CustomButtom label={'Registrar'} onPress={()=>{}}/>
+                <CustomButtom label={'Registrar'} onPress={()=>navigation.navigate('Home')}/>
                     <View
                     style={{
                         flexDirection:'row',
@@ -247,7 +247,7 @@ const RegisterScreen = () => {
                     }}
                     >
                         <Text>Já possui cadastro?</Text>
-                        <TouchableOpacity onPress={()=> {}}>
+                        <TouchableOpacity onPress={()=> navigation.navigate('Login')}>
                         <Text
                         style={{
                             color:'#000',

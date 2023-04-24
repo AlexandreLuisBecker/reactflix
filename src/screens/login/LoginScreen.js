@@ -70,7 +70,7 @@ const LoginScreen = ({navigation}) => {
             />
             <CustomButtom
                 label={'Login'}
-                onPress={()=> {}}
+                onPress={()=> navigation.navigate('Home')}
             />
             <Text
              style={{
@@ -150,7 +150,7 @@ const LoginScreen = ({navigation}) => {
             }}>
                 <Text>Novo por aqui?</Text>
                 <TouchableOpacity
-                    onPress={() => {}}>
+                    onPress={() => navigation.navigate('Register')}>
                     <Text>Registrar-se!</Text>
                 </TouchableOpacity>
             </View>
